@@ -80,11 +80,74 @@ for (let var1 of texto) {
 console.log("Número de vacales",contador)
 
 // 6. Dado un array de números, usa un bucle para multiplicar todos los números y mostrar el producto
+myArreglo=[2,3,4]
+let producto1=1
+for (let i = 0; i < myArreglo.length; i++) {
+     producto1=producto1*myArreglo[i]
+   } console.log(producto1)
 
 // 7. Escribe un bucle que imprima la tabla de multiplicar del 5
+let multiplica=0
+numero=5
+for (let i = 1; i <= 12; i++) {
+    multiplica= numero*[i]   
+    console.log( `${numero} x ${i} = ${multiplica}`) 
+} 
 
 // 8. Usa un bucle para invertir una cadena de texto
 
+texto="HOLA"
+invierte=""
+for (let i = texto.length-1; i >=0; i--) {
+    invierte+=texto[i] 
+    
+} console.log(invierte)
+
+array= "Bienvenido al curso de JavaScript"
+let arrayinvertido=array.split("").reverse().join("")
+console.log(arrayinvertido)
+
+texto2="Tony junco"
+var1=""
+for (let i = texto2.length-1; i>=0;i--) {
+    var1+=texto2[i]
+} console.log(var1)
+
+texto3="daryl"
+var2=texto3.split("").reverse().join("")
+console.log(var2)
+
 // 9. Usa un bucle para generar los primeros 10 números de la secuencia de Fibonacci
+arrayFibonacci=[0,1]
+for(let i = 2; i <=10; i++) {
+    arrayFibonacci[i] = arrayFibonacci[i-1]+arrayFibonacci[i-2];
+    //console.log(arrayFibonacci)
+    
+}  console.log(arrayFibonacci)
+
+let a=0
+let b=1
+resultado=""
+for(let i=1;i<=10;i++)
+{
+resultado+= a+" "
+let siguiente=a+b
+a=b
+b=siguiente
+}
+console.log(resultado)
 
 // 10. Dado un array de números, usa un bucle para crear un nuevo array que contenga solo los números mayores a 10
+myArrayL=[5,7,10,12,15,2,20]
+let nuevo=[]
+for(let i=0; i<myArrayL.length;i++)
+{
+	if(myArrayL[i]>10)
+	{
+               
+		nuevo.push(myArrayL[i]);
+				
+	}    
+} 
+console.log(myArrayL)
+
